@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".BreathingActivity">
+
+    <ImageView
+        android:id="@+id/LotusImage"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/GuideTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="25dp"
+        app:srcCompat="@drawable/breatheimg2" />
+
+    <TextView
+        android:id="@+id/LastBreathTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/TodayMinutesTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="11dp"
+        android:text="Last at 11:45PM"
+        android:textColor="#CDDC39"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/BreathsTakenTxt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LastBreathTxt"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="13dp"
+        android:text="7 Breaths"
+        android:textColor="#CDDC39"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/TodayMinutesTxt"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="242dp"
+        android:layout_marginBottom="490dp"
+        android:text="4 min today"
+        android:textColor="#CDDC39"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/OneMinuteTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="509dp"
+        android:text="1 MIN"
+        android:textColor="#CDDC39"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="#8BC34A"
+        android:text="START"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/GuideTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/StartButton"
+        android:layout_marginBottom="47dp"
+        android:text="Breathe"
+        android:textAlignment="center"
+        android:textColor="#F4F4F4"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>
